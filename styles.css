@@ -1,0 +1,25 @@
+* { margin: 0; 
+    padding: 0; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.home_carrossel img {
+    background-color:transparent;
+    border: none;
+    width: 100%;
+}
+
+.home_titulo h2 {
+    font-size: 20px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin: 0;
+}
+

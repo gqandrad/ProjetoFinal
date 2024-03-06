@@ -1,0 +1,73 @@
+header {
+    background-color: black;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.logo img {
+    height: 50px; 
+    background-color: transparent;
+}
+
+.header_nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.header_nav ul li {
+    margin: 0 35px;
+    position: relative;
+}
+
+.header_nav ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.header_nav ul li a::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background-color: #FF69B4;
+    position: absolute;
+    bottom: -5px;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transform-origin: bottom right;
+}
+
+.header_nav ul li a:hover::after {
+    width: 100%;
+    right: 0; 
+}
+
+.header_barra-pesquisa {
+    position: relative;
+    margin-left: 15px;
+}
+
+.header_barra-pesquisa input[type="text"] {
+    width: 200px;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    outline: none;
+}
+
+.header_icones {
+    display: flex;
+    align-items: center;
+    
+}
+
+.header_icones button {
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 15px;
+}
